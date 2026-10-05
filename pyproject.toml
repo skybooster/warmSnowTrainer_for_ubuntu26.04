@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "warmsnow-trainer"
+version = "0.1.0"
+description = "暖雪（Warm Snow）存档修改器：修改红魂/蓝魂/黄魂等局外货币数量"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Warm Snow Trainer" }]
+
+[project.scripts]
+warmsnow-trainer = "warmsnow_trainer.cli:main"
+
+[tool.setuptools]
+packages = ["warmsnow_trainer"]
